@@ -1,0 +1,306 @@
+* {
+    font-family:'Times New Roman', Times, serif
+}
+
+/*NAV-BAR*/
+
+#navbar {
+    border-bottom: 1px solid #7a7a7a;
+    background-color: #faf8f8;
+    
+}
+
+.navbar-brand img {
+    width: 150px;
+   
+}
+
+.navbar-brand {
+    display: flex;
+    
+}
+
+#navbar a.active {
+    border-bottom: 1px solid black;
+    
+}
+
+#navbar-items .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#navbar-items .nav-item {
+    margin: 0 2em;
+    
+
+}
+
+li {
+    font-size: 25px;
+}
+
+/*slider*/
+
+#carouselExampleIndicators {
+    margin-top: 8em;
+    margin-bottom: 1em;
+}
+
+#carouselExampleIndicators .carousel-caption {
+    bottom: 3em;
+
+}
+
+#carouselExampleIndicators .carousel-caption h5 {
+    font-size: 2.5em;
+    text-shadow: #000 5px 5px;
+    background-color: rgba(32, 34, 34, 0.34);
+}
+
+.btn-secondary {
+    padding: 0.3 0.8em;
+    font-size: 1em;
+    margin-top: 1em;
+    background-color: rgba(32, 34, 34, 0.74);
+}
+
+.visually-hidden {
+    color: black;
+    font-size: 3em;
+
+} 
+
+.slide [data-bs-target] {
+  
+    opacity: 0.8;
+}
+
+/*cards*/
+.card {
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.icard {
+    font-size: 2em;
+}
+
+
+/*media */
+
+@media (min-width: 768px) {
+
+    #carouselExampleIndicators .carousel-caption {
+        bottom: 15em;
+    }
+
+    #carouselExampleIndicators .carousel-caption h5 {
+        font-size: 4em;
+        text-shadow: #000 2px 3px;
+    }
+
+    #carouselExampleIndicators .btn-secondary {
+        padding: 0.6 1.6em;
+        font-size: 1.2em;
+       
+    }
+
+    .carousel-inner {
+        width: 90%;
+        display: flex;
+        margin: auto;
+    }
+}
+
+/*destaques*/
+
+#featured-container {
+    margin-bottom: 4em;
+}
+
+.title {
+    font-size: 1.75em;
+    margin-bottom: 0.4em;
+    position: relative;
+}
+
+.title:before {
+    width: 75px;
+    border-top: 4px solid #a78f8f6e;
+    content: '';
+    position: absolute;
+    bottom: 2em;
+}
+
+#featured-images {
+    margin-top: 2em;
+
+}
+
+#featured-images .col-md-4 {
+    position: relative;
+    cursor: pointer;
+}
+
+#featured-images .col-md-4:hover > .banner-content {
+    opacity: 0.8;
+}
+
+#featured-images .banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+
+}
+
+@media(min-width: 768px) {
+    .title {
+        font-size: 2.4em;
+    }
+    .title:before {
+        bottom: 1.5em;
+    }
+    #featured-images .banner-content {
+        opacity: 0;
+    }
+}
+
+/*info*/
+
+#info-content {
+    margin-bottom: 4em;
+    padding: 4em 1em;
+}
+
+#info-numbers {
+    margin: 1.5em;
+}
+
+#info-banner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+#info-numbers h3 {
+    font-size: 3em;
+}
+
+@media(min-widht: 768) {
+    #info-content {
+        padding: 3.5em;
+    }
+} 
+
+p {
+    font-size: 18px;
+}
+
+#footer {
+    padding: 3em 2em;
+}
+
+.footercolor {
+    color: #a78f8f6e;
+}
+
+
+#footer-top {
+    margin-bottom: 2em;
+}
+
+#footer-top, #footer-top i {
+    color: #a78f8f6e;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+#footer-top, #footer-top i:hover {
+    color: rgb(231, 241, 241);
+    
+}
+
+#social-icons {
+    text-align: right;
+    font-size: 2em;
+}
+
+/*footer details*/
+
+#footer-details, #contact-container, #links-container {
+    padding: 0;
+    border: 0;
+    margin-bottom: 2em;
+}
+
+#footer-details h4 {
+    color: #fff;
+    margin-bottom: 1.5em;
+}
+
+
+#news-container input {
+    border-radius: 0;
+    border: none;
+}
+
+#links-container li {
+    margin-bottom: 0.5em;
+}
+
+#links-container a {
+    text-decoration: none;
+}
+
+#links-container a:hover {
+    color:rgb(225, 236, 236);
+}
+
+
+/*footer bottom*/
+#footer-bottom {
+    border-top: 1px solid #a78f8f6e;
+    padding-top: 2em;
+}
+
+#footer-bottom i:hover {
+    color: red;
+    margin-left: 0.3em;
+}
+
+.list-unstyled li{
+    font-size: 20px;
+}
+
+.list-unstyled li a{
+    color: #a78f8f6e;
+}
+
+@media(min-width: 768px) {
+    #news-container {
+        padding-right: 2em;
+    }
+
+    #links-container {
+        padding-left: 2em;
+    }
+
+    #contact-container {
+        padding: 0 2em;
+        border-left: 1px solid #e7dede;
+        border-right: 1px solid #e0d3d3;
+    }
+}
